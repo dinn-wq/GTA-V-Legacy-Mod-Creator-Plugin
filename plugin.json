@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gta-v-legacy-mod-creator",
+  "version": "1.2.3",
+  "description": "An AI development assistant for designing, generating, packaging, troubleshooting, and maintaining GTA V Legacy Story Mode mods on Windows PC. GPT-6 is recommended when available; otherwise use GPT-5.6 or higher for more reliable complex mod generation.",
+  "author": {
+    "name": "Cartoon Dinn"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "GTA V Legacy Mod Creator",
+        "shortDescription": "Build GTA V Legacy mods",
+        "longDescription": "Create real GTA V Legacy Story Mode mod source, configuration, packaging, installation instructions, and troubleshooting guidance with strict dependency, testing honesty, and anti-cheat safeguards. GPT-6 is recommended when available for larger or more complex mod projects. If GPT-6 is not available, use GPT-5.6 or higher for better consistency with APIs, dependencies, multi-file code, and debugging. Lower-capability models may produce less reliable mod code and should be used with extra review. Model choice does not replace compilation or in-game testing.",
+        "developerName": "Cartoon Dinn",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": [
+          "Create a funny GTA V Legacy mod for me, like a chaotic pizza delivery job or a weird NPC mission, and generate the usable files.",
+          "Create a fresh GTA V Legacy mod idea for me. It can be a gang mission, police job, survival mode, street race, or a ridiculous challenge.",
+          "I have a weird mod idea. Turn it into a real GTA V Legacy Story Mode mod with working code, installation steps, and a ready-to-package file structure."
+        ],
+        "logo": "assets/gta-v-legacy-mod-creator.png",
+        "composerIcon": "assets/gta-v-legacy-mod-creator.png"
+      }
+    }
+  }
+}
